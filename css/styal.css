@@ -1,0 +1,124 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-style: 16px;
+    color: #444;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1160px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*:focus{
+    outline: 2px dotted #DE2E54;
+    outline-offset: 2px;
+}
+
+/* SITE-HEADER */
+
+.site-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.site-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SITE-LOGO */
+
+.site-logo{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #222;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.site-logo:hover{
+    color: #DE2E54;
+}
+.site-logo:active{
+    opacity: 0.6;
+}
+
+.site-logo-img{
+    margin-right: 16px;
+}
+
+/* SITINAV */
+
+.sitenav{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.sitenav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sitenav-item:not(:last-child){
+    margin-right: 32px;
+
+}
+
+.sitenav-link{
+    display: block;
+    color: #222;
+    text-decoration: none;
+}
+
+.sitenav-link:hover{
+    color: #DE2E54;
+}
+
+.sitenav-link:active{
+    opacity: 0.6;
+}
+
+/* MAIN-LINK */
+
+.main-link{
+    display:inline-block;
+    text-decoration: none;
+    font-family: "Open Sans Condensed","Arial", sans-serif;
+    background-color: #DE2E54;
+    border: 2px solid #DE2E54;
+    border-radius: 8px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 22px;
+}
+.main-link:hover{
+    background-color: #FFFFFF;
+    color: #DE2E54;
+}
+.main-link:active{
+    background-color: #DE2E54;
+    color: #FFFFFF;
+    opacity:0.6;
+}
