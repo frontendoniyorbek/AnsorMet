@@ -192,6 +192,7 @@ body {
     padding-bottom: 120px;
 }
 .hero-container{
+    padding-bottom: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -211,6 +212,7 @@ body {
     margin-top: 0;
     margin-bottom: 36px;
 }
+
 
 .hero-img{
     align-self: flex-end;
