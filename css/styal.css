@@ -138,6 +138,8 @@ body {
     font-weight: bold;
     font-size: 15px;
     padding: 10px 22px;
+    text-align: center;
+    white-space: nowrap;
 }
 .main-link:hover{
     background-color: #FFFFFF;
@@ -214,6 +216,8 @@ body {
 
 
 .hero-img{
+    width: 423px;
+    height: 504px;
     align-self: flex-end;
 }
 
