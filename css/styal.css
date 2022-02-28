@@ -52,6 +52,7 @@ body {
     color: #222;
     font-weight: 600;
     font-size: 24px;
+    transition: color 0.4s ease;
 }
 
 .site-logo-site-footer{
@@ -100,6 +101,7 @@ body {
     display: block;
     color: #222;
     text-decoration: none;
+    transition: color 0.4s ease;
 }
 
 .sitenav-link:hover{
@@ -130,6 +132,7 @@ body {
     background-color: #DE2E54;
     border: 2px solid #DE2E54;
     border-radius: 8px;
+    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
     color: #FFFFFF;
     letter-spacing: 2px;
     font-weight: bold;
@@ -161,6 +164,7 @@ body {
     color: #fff;
     border-color: #fff;
     background-color: transparent;
+    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
 }
 .main-link-outline:hover{
     color: #fff;
@@ -207,8 +211,6 @@ body {
     margin-top: 0;
     margin-bottom: 36px;
 }
-
-
 
 .hero-img{
     align-self: flex-end;
@@ -302,8 +304,12 @@ body {
     justify-content: center;
 }
 
-.cta-links-imem:not(:last-child){
+.cta-links-item:not(:last-child){
     margin-right: 40px;
+}
+
+.cta-links-item{
+    text-transform: uppercase;
 }
 
 
