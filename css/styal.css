@@ -12,7 +12,7 @@ body {
     padding: 0;
     font-family:"Open Sans", "Arial", sans-serif;
     line-height: 1.5;
-    font-style: 16px;
+    font-size: 16px;
     color: #444;
 }
 
@@ -207,6 +207,7 @@ body {
     font-family: "Open Sans Condensed","Open Sans", "Arial", sans-serif;
     font-weight: bold;
     line-height: 1.2;
+    font-size: 36px;
 }
 
 .hero-text{
@@ -244,7 +245,7 @@ body {
     font-family:"Open Sans Condensed","Open Sans","Arial",sans-serif;
     color: #000;
     font-weight: bold;
-    font-style: 36px;
+    font-size: 36px;
 }
 
 .index-services-item:not(:last-child){
@@ -289,7 +290,7 @@ body {
 .cta{
     background-color:#0EB4C1;
     padding-top: 64px;
-    padding-right: 64px;
+    padding-bottom: 64px;
 }
 
 .cta-heading{
