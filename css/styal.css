@@ -16,6 +16,69 @@ body {
     color: #444;
 }
 
+
+/* BUTTON */
+.button{
+    display:inline-block;
+    text-decoration: none;
+    font-family: "Open Sans Condensed","Arial", sans-serif;
+    background-color: #DE2E54;
+    border: 2px solid #DE2E54;
+    border-radius: 8px;
+    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 22px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.button:hover{
+    background-color: #FFFFFF;
+    color: #DE2E54;
+}
+.button:active{
+    background-color: #DE2E54;
+    color: #FFFFFF;
+    opacity:0.6;
+}
+
+.button--solid:hover{
+    border-color: transparent;
+    background-color: rgba(222, 46, 84, 0.8);
+    color: #fff;
+}
+.button--solid:active{
+    background-color: rgba(222, 46, 84, 0.6);
+    opacity: 1;
+}
+
+
+.button--outline{
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+}
+.button--outline:hover{
+    color: #fff;
+    background-color: #DE2E54;
+    border-color: transparent;
+}
+
+.button--outline:active{
+    background: #DE2E54;
+    opacity: 0.6;
+}
+
+.button--outline:active{
+    background-color: rgba(222, 46, 84, 0.6);
+    opacity: 1;
+}
+
+
 /* CONTAINER */
 .container {
     width: 100%;
@@ -33,11 +96,11 @@ body {
 
 /* SITE-HEADER */
 
-.site-header{
+.header{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.site-header-container{
+.header__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +108,7 @@ body {
 
 /* SITE-LOGO */
 
-.site-logo{
+.logo{
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -55,21 +118,23 @@ body {
     transition: color 0.4s ease;
 }
 
-.site-logo-site-footer{
+.site-footer__logo{
     color: #FFFFFF;
 }
 
-.site-logo:hover{
+.logo:hover{
     color: #DE2E54;
 }
-.site-logo:active{
+
+.logo:active{
     opacity: 0.6;
 }
+
 .site-logo-site-footer:active{
     color: #fff;
 }
 
-.site-logo-img{
+.logo__img{
     border-radius: 50%;
     margin-right: 16px;
 }
@@ -83,7 +148,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.sitenav-list{
+.sitenav__list{
     display: flex;
     align-items: center;
     list-style: none;
@@ -92,114 +157,56 @@ body {
 }
 
 
-.sitenav-item:not(:last-child){
+.sitenav__item:not(:last-child){
     margin-right: 32px;
 
 }
 
-.sitenav-link{
+.sitenav__link{
     display: block;
     color: #222;
     text-decoration: none;
     transition: color 0.4s ease;
 }
 
-.sitenav-link:hover{
+.sitenav__link:hover{
     color: #DE2E54;
 }
 
-.sitenav-link:active{
+.sitenav__link:active{
     opacity: 0.6;
 }
 
-.sitenav-site-footer .sitenav-link{
+.sitenav__site-footer .sitenav__link{
     color: #fff;
 }
 
-.sitenav-site-footer .sitenav-link:hover{
+.sitenav__site-footer .sitenav__link:hover{
     color: #DE2E54;
 }
 
-.sitenav-site-footer .sitenav-link:active{
+.sitenav__site-footer .sitenav__link:active{
     color: #fff;
 }
-/* MAIN-LINK */
 
-.main-link{
-    display:inline-block;
-    text-decoration: none;
-    font-family: "Open Sans Condensed","Arial", sans-serif;
-    background-color: #DE2E54;
-    border: 2px solid #DE2E54;
-    border-radius: 8px;
-    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
-    color: #FFFFFF;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px 22px;
-    text-align: center;
-    white-space: nowrap;
-}
-.main-link:hover{
-    background-color: #FFFFFF;
-    color: #DE2E54;
-}
-.main-link:active{
-    background-color: #DE2E54;
-    color: #FFFFFF;
-    opacity:0.6;
-}
-
-.main-link-solid:hover{
-    border-color: transparent;
-    background-color: rgba(222, 46, 84, 0.8);
-    color: #fff;
-}
-.main-link-solid:active{
-    background-color: rgba(222, 46, 84, 0.6);
-    opacity: 1;
-}
-
-
-.main-link-outline{
-    color: #fff;
-    border-color: #fff;
-    background-color: transparent;
-    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
-}
-.main-link-outline:hover{
-    color: #fff;
-    background-color: #DE2E54;
-    border-color: transparent;
-}
-.main-link-outline:active{
-    background: #DE2E54;
-    opacity: 0.6;
-}
-.main-link-outline:active{
-    background-color: rgba(222, 46, 84, 0.6);
-    opacity: 1;
-}
 
 /*HERO*/
-
 .hero{
     background-color:#0EB4C1;
     color: #fff;
 }
 
-.hero-content{
+.hero__content{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.hero-container{
+.hero__container{
     padding-bottom: 0;
     display: flex;
     justify-content: space-between;
 }
 
-.hero-headeng{
+.hero__headeng{
     width: 500px;
     margin-top: 0;
     margin-bottom: 16px;
@@ -210,25 +217,25 @@ body {
     font-size: 36px;
 }
 
-.hero-text{
+.hero__text{
     width: 440px;
     margin-bottom: 36px;
 }
 
 
-.hero-img{
+.hero__img{
     width: 423px;
     height: 504px;
     align-self: flex-end;
 }
 
 /* INDEX-SERVICES */
-.index-services{
+.index-services {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.index-services-list{
+.index-services__list{
     width: 864px;
     margin-left: auto;
     margin-right: auto;
@@ -237,7 +244,7 @@ body {
     margin-bottom: 60px;
     list-style: none;
 }
-.index-services-headeng{
+.index-services__headeng{
     margin-top: 0;
     margin-bottom: 56px;
     line-height: 1.2;
@@ -248,7 +255,7 @@ body {
     font-size: 36px;
 }
 
-.index-services-item:not(:last-child){
+.index-services__item:not(:last-child){
     margin-bottom: 80px;
 }
 
@@ -257,7 +264,7 @@ body {
     align-items: center;
 }
 
-.index-service-img{
+.index-service__img{
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -265,10 +272,10 @@ body {
     box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
     border-radius: 24px;
 }
-.index-service-content{
+.index-service__content{
     width: 600px;
 }
-.index-service-title{
+.index-service__title{
     font-family:"Open Sans Condensed","Open Sans","Arial",sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -277,11 +284,11 @@ body {
     color: #222;
 }
 
-.index-service-discription{
+.index-service__discription{
     margin: 0;
 }
 
-.index-serviced-action{
+.index-serviced__action{
     display: flex;
     justify-content: center;
 }
@@ -331,7 +338,7 @@ body {
     color: #FFFFFF;
 }
 
-.site-footer-container {
+.site-footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
